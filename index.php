@@ -1,3 +1,6 @@
+<?php
+define('__YEAR__', 2020);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,11 +11,11 @@
     <link rel="stylesheet" href="media/css/bootstrap-select.min.css">
     <link rel="icon" href="media/images/favicon.png" type="image/x-icon"/>
 
-    <title>АРМИЯ-2019. Навигация.</title>
+    <title>АРМИЯ-<?php echo __YEAR__;?>. Навигация.</title>
 </head>
 <body>
 <div class="container">
-    <div class="text-center"><h6>Схема движения транспорта на международном военно-техническом форуме "Армия-2019"</h6></div>
+    <div class="text-center"><h6>Схема движения транспорта на международном военно-техническом форуме "Армия-<?php echo __YEAR__;?>"</h6></div>
     <div id="l-form">
         <div class="form-group">
             <div class="form-group">
