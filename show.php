@@ -55,7 +55,6 @@ if (isset($_GET['ajax'])) {
 <script src="media/js/jquery-3.4.1.min.js"></script>
 <script src="media/js/jquery.dataTables.min.js"></script>
 <script src="media/js/dataTables.bootstrap4.min.js"></script>
-<script src="media/js/scheme.min.js"></script>
-<script src="media/js/stat.min.js"></script>
+<script src="media/js/show.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,3 @@
-<?php
-define('__YEAR__', 2020);
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,11 +8,11 @@ define('__YEAR__', 2020);
     <link rel="stylesheet" href="media/css/bootstrap-select.min.css">
     <link rel="icon" href="media/images/favicon.png" type="image/x-icon"/>
 
-    <title>АРМИЯ-<?php echo __YEAR__;?>. Навигация.</title>
+    <title>АРМИЯ-2020. Навигация.</title>
 </head>
 <body>
 <div class="container">
-    <div class="text-center"><h6>Схема движения транспорта на международном военно-техническом форуме "Армия-<?php echo __YEAR__;?>"</h6></div>
+    <div class="text-center"><h6>Схема движения транспорта на международном военно-техническом форуме "Армия-2020"</h6></div>
     <div id="l-form">
         <div class="form-group">
             <div class="form-group">
@@ -35,15 +32,14 @@ define('__YEAR__', 2020);
             <h4>Подробный маршрут</h4>
             <object type="image/svg+xml" id="route">Маршрут ещё не прорисован</object>
         </div>
-    </div>
-    <div id="l-route" style="display: none; width: 100%;">
-        <div class="text-center">
-            <h4>Подробный маршрут</h4>
-            <object type="image/svg+xml" id="route">Маршрут ещё не прорисован</object>
-        </div>
+        <a href="#" id="link-reset">
+            <div class="alert alert-primary text-center" role="alert">
+                Начать заново
+            </div>
+        </a>
     </div>
     <div class="w-100 h-100" id="l-scheme">
-        <object type="image/svg+xml" id="scheme" data="media/scheme/scheme.svg">Не удаётся загрузить схему</object>
+        <object type="image/svg+xml" id="scheme" data="media/scheme/scheme-2020.svg">Не удаётся загрузить схему</object>
     </div>
     <div class="text-center" style="font-size: 0.4em;">Пользуясь данной интерактивной схемой, вы соглашаетесь с <a href="#" data-toggle="modal" data-target="#legal">условиями использования</a>.</div>
     <div class="modal fade" id="legal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -64,32 +60,11 @@ define('__YEAR__', 2020);
             </div>
         </div>
     </div>
-    <div class="modal fade" id="not_routes" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h6 class="modal-title" id="exampleModalLongTitle">Увы</h6>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Понятно">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Между выбранными пунктами нет прямого автобусного сообщения. Попробуйте поискать маршруты от другой остановки.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Понятно</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#" data-toggle="modal" data-target="#not_routes" id="not_show_link" style="display: none;">Нет маршрутов</a>
 </div>
 <script src="media/js/jquery-3.4.1.min.js"></script>
+<script src="media/js/stations.js"></script>
 <script src="media/js/popper.min.js"></script>
 <script src="media/js/bootstrap.min.js"></script>
 <script src="media/js/bootstrap-select.min.js"></script>
-<script src="media/js/scheme.min.js"></script>
-<script src="media/js/ui.min.js"></script>
-<script src="media/js/script.min.js"></script>
 </body>
 </html>

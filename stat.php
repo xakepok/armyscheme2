@@ -1,6 +1,5 @@
 <?php
-require_once 'mysqli.php';
-$mysqli = new mysqli(MYSQLI_SERVER, MYSQLI_USER, MYSQLI_PASS, MYSQLI_DB);
+$mysqli = new mysqli('localhost', 'joomla', 'gO2fc7tEzPwT2', 'joomla');
 if ($mysqli->connect_errno) exit('error');
 $ip = $_SERVER['REMOTE_ADDR'] ?? '0';
 $latitude = $_REQUEST['latitude'] ?? '0';
