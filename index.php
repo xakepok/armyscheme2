@@ -17,7 +17,7 @@
         <div class="form-group">
             <div class="form-group">
                 <select name="from" id="form_from" class="form-control">
-                    <option value="0">Откуда</option>
+
                 </select>
             </div>
             <div class="form-group">

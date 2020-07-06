@@ -476,6 +476,12 @@ var Route2 = {
     }
 };
 
+function StationGroup(title) {
+    var option = document.createElement("optgroup");
+    option.text = title;
+    return option
+}
+
 function Station(id, title) {
     var option = document.createElement("option");
     option.value = id;
@@ -799,9 +805,18 @@ var Route = {
 };
 
 function loadFromList() {
+    var o = {
+        'Москва': [Stations[1]],
+        'Подмосковье': [Stations[3], Stations[5]],
+    };
     var list = [Stations[1], Stations[3], Stations[5], Stations[7], Stations[8], Stations[9], Stations[11], Stations[12], Stations[14], Stations[15], Stations[16], Stations[17], Stations[18], Stations[19], Stations[20], Stations[11], Stations[22], Stations[23], Stations[27], Stations[28], Stations[100], Stations[101]];
-    for (var i = 0; i < list.length; i++) {
-        document.querySelector("#form_from").appendChild(list[i])
+    for (var opt in o) {
+        var g = document.createElement('optgroup');
+        g.label = opt;
+        document.querySelector("#form_from").appendChild(g);
+        for (var i = 0; i < o[opt].length; i++) {
+            document.querySelector("#form_from > optgroup:last-child").appendChild(o[opt][i]);
+        }
     }
 }
 
