@@ -807,9 +807,12 @@ var Route = {
 function loadFromList() {
     var o = {
         'Москва': [Stations[1]],
-        'Подмосковье': [Stations[3], Stations[5]],
+        'Подмосковье': [Stations[3], Stations[5], Stations[7]],
+        'Парк Патриот': [Stations[15], Stations[16], Stations[17], Stations[8], Stations[9], Stations[28], Stations[27]],
+        'Объекты парка Патриот': [Stations[11], Stations[12], Stations[14]],
+        'Парковка парка Патриот': [Stations[19], Stations[25], Stations[24], Stations[18], Stations[20], Stations[21], Stations[22]],
+        'Полигон Алабино': [Stations[23]],
     };
-    var list = [Stations[1], Stations[3], Stations[5], Stations[7], Stations[8], Stations[9], Stations[11], Stations[12], Stations[14], Stations[15], Stations[16], Stations[17], Stations[18], Stations[19], Stations[20], Stations[11], Stations[22], Stations[23], Stations[27], Stations[28], Stations[100], Stations[101]];
     for (var opt in o) {
         var g = document.createElement('optgroup');
         g.label = opt;
