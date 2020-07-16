@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />-->
     <link rel="stylesheet" href="media/css/bootstrap.min.css">
     <link rel="stylesheet" href="media/css/bootstrap-select.min.css">
     <link rel="icon" href="media/images/favicon.png" type="image/x-icon"/>
@@ -30,7 +30,7 @@
     <div id="l-route" style="display: none; width: 100%;">
         <div class="text-center">
             <h4>Подробный маршрут</h4>
-            <object type="image/svg+xml" id="route">Маршрут ещё не прорисован</object>
+            <object type="image/svg+xml" id="route" style="max-height: 200px; width: 100%;">Маршрут ещё не прорисован</object>
         </div>
         <a href="#" id="link-reset">
             <div class="alert alert-primary text-center" role="alert">
