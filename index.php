@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="media/css/bootstrap-select.min.css">
     <link rel="icon" href="media/images/favicon.png" type="image/x-icon"/>
 
-    <title>АРМИЯ-2020. Навигация.</title>
+    <title>АРМИЯ-2020. Схема движения общественного транспорта.</title>
 </head>
 <body>
+<br style="padding-top: 3px;">
 <div class="container">
-    <div class="text-center"><h6>Схема движения транспорта на международном военно-техническом форуме "Армия-2020"</h6></div>
     <div id="l-form">
         <div class="form-group">
             <div class="form-group">

@@ -1,5 +1,5 @@
 <?php
 define('MYSQLI_SERVER', 'localhost');
-define('MYSQLI_USER', 'joomla');
-define('MYSQLI_PASS', 'gO2fc7tEzPwT2');
-define('MYSQLI_DB', 'joomla');
+define('MYSQLI_USER', 'transport');
+define('MYSQLI_PASS', 'KCtLyKf5HHHLcTmBUEWH');
+define('MYSQLI_DB', 'transport');
